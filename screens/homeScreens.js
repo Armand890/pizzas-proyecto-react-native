@@ -19,6 +19,7 @@ const home = ({ navigation }) => {
       </TouchableOpacity>
             </View>
             <View style={styles.container}>
+           
             <View>
             <TouchableOpacity onPress={handDetallPress} > <Image style={styles.tinyLogo} source={{uri:"https://imag.bonviveur.com/primer-plano-de-pizza-margarita.jpg"}} />  
             <Text>PIZZA HOJITAS $100</Text>   </TouchableOpacity>
@@ -39,6 +40,9 @@ const home = ({ navigation }) => {
 }
         const styles = StyleSheet.create({
           container: {
+            alignItems: 'center',
+            textAlign: 'center',
+            justifyContent: 'center',
             paddingTop: 50,
           },
           tinyLogo: {

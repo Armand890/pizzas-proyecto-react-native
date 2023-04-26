@@ -6,6 +6,7 @@ import 'react-native-gesture-handler';
 import loggin from './screens/logginScreens';
 import home from './screens/homeScreens';
 import detall from './screens/detalleScreens';
+import datos from './screens/cuestionarioScreens';
 
 
 
@@ -15,6 +16,8 @@ const app = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+
+      <Stack.Screen name="datos" component={datos} />
         <Stack.Screen name="loggin" component={loggin} />
         <Stack.Screen name="home" component={home} />
         <Stack.Screen name="detalles" component={detall} />
